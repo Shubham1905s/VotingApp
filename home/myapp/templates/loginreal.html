@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'loginreal.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+          
+            <div class="col login-section">
+                <h2>Login</h2>
+                <div class="text-box-cont">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                    </div>
+                    <div class="input-group">
+                        <input type="password" class="form-control" placeholder="Password" aria-label="Password">
+                    </div>
+
+                    <div class="login-btn">
+                      
+                        <button class="btn btn-primary">Login
+                            
+                        </button>
+                    </div>
+                </div>
+     
+                <div class="row">
+                    <p>Don't Have an Account? <span class="sign-up-link">Create your Account</span></p>
+                </div>
+            </div>
+
+      
+            <div class="col welcome-section">
+                <h2>Welcome Back</h2>
+                
+                <p>Create your account by clicking the Signup Button</p>
+                <a href="{% url 'myapp:signin' %}">
+                <button class="btn btn-outline-light">
+                    Sign Up</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

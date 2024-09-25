@@ -1,0 +1,149 @@
+
+body {
+    background-color: #f7f7ff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #6A6A6A;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.col {
+    flex: 1;
+    padding: 40px;
+}
+
+
+.login-section {
+    background-color: #f7f7ff;
+}
+
+.login-section h2 {
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.text-box-cont .input-group {
+    margin-bottom: 20px;
+}
+
+.text-box-cont .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forget-password {
+    text-align: center;
+    font-size: 0.9em;
+    color: #007bff;
+}
+
+.login-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-btn .btn {
+    padding: 10px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn .btn:hover {
+    background-color: #0056b3;
+}
+
+
+.social-login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons i {
+    font-size: 1.5em;
+    color: #6c757d;
+}
+
+.social-icons i:hover {
+    color: #007bff;
+}
+
+
+.sign-up-link {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.sign-up-link:hover {
+    text-decoration: underline;
+}
+
+
+.welcome-section {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+}
+
+.welcome-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.welcome-section .btn {
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.welcome-section .btn:hover {
+    background-color: #fff;
+    color: #343a40;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions</title>
+</head>
+<body>
+    <p><pre>                            Instructions</pre></p>
+    <img src="{% static 'images/poster.png' %}" alt="Event Poster" width="500">
+    <a href="{% url 'myapp:votingPage' %}">
+        <button class="btn btn-outline-light">
+            NEXT</button>
+        </a>
+</body>
+</html>

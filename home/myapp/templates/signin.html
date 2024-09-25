@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'loginreal.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col login-section">
+                <h2>REGISTER </h2>
+                <div class="text-box-cont">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                    </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="College email ID" aria-label="email">
+                        </div>
+                   
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="last 6 digits of Aadhar card" aria-label="Username">
+                    </div>
+                    <div class="input-group">
+                        <input type="password" class="form-control" placeholder="create Password" aria-label="Password">
+                    </div>
+               
+                    <div class="login-btn">
+                        <a href="{% url 'myapp:loginreal' %}">
+                        <button class="btn btn-primary">Sign In
+                          
+                        </button>
+                    </a>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <p>Already have an Account? <span class="sign-up-link">click here to login</span></p>
+                </div>
+            </div>
+
+         
+            <div class="col welcome-section">
+                <h2>LOGIN</h2>
+                <p>Create your account by clicking the Signup Button</p>
+                <a href="{% url 'myapp:loginreal' %}">
+                <button class="btn btn-outline-light">Sign Up</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
